@@ -20,7 +20,7 @@ const Countrys = () => {
             }
             <h4>All Countrys: {countrys.length}</h4>
            {/*  <Outlet /> */}
-            <div className=' w-4/5 mx-auto grid sm:grid-cols-3 gap-5'>
+            <div className=' w-4/5 mx-auto grid sm:grid-cols-3 gap-4'>
             {
                 countrys.length>0 && countrys.map(country=> <Country key={country.name.common} country={country}></Country>)
             }
